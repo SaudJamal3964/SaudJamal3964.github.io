@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <style>
+        body {
+           background-color: black;
+        }
+         h1{
+            color : red;
+            font-family:Graphique;
+            font-style: normal;
+            background-color: black;
+            padding-left: 40%;
+            padding-bottom: 7%;
+            padding-top: 7%;  
+            font-size: 50px;   
+        } 
+        
+        .link_rem{
+            text-decoration: none;
+            color: white;
+        }
+
+        li{
+            font-size: 12px;
+            display: inline;
+            padding-left: 12px;
+            letter-spacing: 2.5px;
+        }
+        .tabs{
+            position: absolute;
+            top: 9%;
+            left: 3.5%;
+            transform: translate(-50px, -50px);
+        }
+
+        /* .netflixLogo{
+            position: absolute;
+            top: 20%;
+            left: 41%;
+            transform: translate(-50px,-50px);
+            height: 80px;
+            width: 380px;
+
+        } */
+        .logo_video{
+            position: absolute;
+            top: 2%;
+            left: 35%;
+            transform: translate(-50px, -50px);
+            height: 280px;
+            width: 500px;
+        }
+       .img-container{
+            padding-left: 2%;
+       }
+
+        .img1{
+            height: 250px;
+            width: 180px; 
+            transition: transform 0.3s ease;       
+        }
+        .img1:hover{
+            transform: scale(1.2);
+        }
+    
+        .img2{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img2:hover{
+            transform: scale(1.2);
+        }
+        .img3{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img3:hover{
+            transform: scale(1.2);
+        }
+        .img4{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img4:hover{
+            transform: scale(1.2);
+        }
+        .img5{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img5:hover{
+            transform: scale(1.2);
+        }
+        .img6{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img6:hover{
+            transform: scale(1.2);
+        }
+        .img7{
+            height: 250px;
+            width: 180px;
+            padding-left: 0px;
+            transition: transform 0.3s ease;  
+        }
+        .img7:hover{
+            transform: scale(1.2);
+        }
+        
+        .btn-container{
+            padding-left: 44%;
+        }
+        .btn1{
+            font-size: medium;
+            font-family: fantasy;
+            text-align: center;          
+            letter-spacing: 4px;
+            height: 50px;
+            width: 150px;
+            border: none;
+            outline: none;
+            box-shadow: inset 0 0 0 0 #E50914;
+            transition: ease-out 0.3s;
+            color: #E50914 ;
+            background-color: #0e0d0d;
+        }
+        .btn1:hover{
+            box-shadow: inset 150px 0 0 0 #E50914;
+            color: #0e0d0d;
+        }
+
+        .lft_arrow{
+            position: absolute;
+            top: 58%;
+            left:2.5%;
+            transform: translate(-50%, -50%); 
+            height: 55px;
+            width: 55px;
+            border-radius: 155%;
+            background-color: #888585;
+            border: none;
+            color: white;
+            font-size:medium;
+            transition: transform 0.3s ease;
+            outline: none;
+            background-color: #E50914;
+        }
+
+        .lft_arrow:hover{
+            transform: scale(1);
+            color: #888585;
+            background-color: white;
+        }
+        .lft_arrow_2{
+            position: absolute;
+            top: 154%;
+            left:2.5%;
+            transform: translate(-50%, -50%); 
+            height: 55px;
+            width: 55px;
+            border-radius: 155%;
+            background-color: #888585;
+            border: none;
+            color: white;
+            font-size:medium;
+            transition: transform 0.3s ease;
+            outline: none;
+            background-color: #E50914;
+        }
+
+        .lft_arrow_2:hover{
+            transform: scale(1);
+            color: #888585;
+            background-color: white;
+        }
+
+        .right_arrow{
+            position: absolute;
+            top: 58%;
+            left: 96%;
+            transform: translate(-50%, -50%); 
+            height: 55px;
+            width: 55px;
+            border-radius: 155%;
+            background-color: #888585;
+            border: none;
+            color: white;
+            font-size:medium;
+            transition: transform 0.3s ease-in;
+            outline: none;
+            background-color:#E50914;
+        }
+
+        .right_arrow:hover{
+            transform: scale(1);
+            color: #888585;
+            background-color: white;
+        }
+
+        
+        .right_arrow_2{
+            position: absolute;
+            top: 154%;
+            left: 97.5%;
+            transform: translate(-50%, -50%); 
+            height: 55px;
+            width: 55px;
+            border-radius: 155%;
+            background-color: #888585;
+            border: none;
+            color: white;
+            font-size:medium;
+            transition: transform 0.3s ease-in;
+            outline: none;
+            background-color:#E50914;
+        }
+
+        .right_arrow_2:hover{
+            transform: scale(1);
+            color: #888585;
+            background-color: white;
+        }
+
+
+        .form-container{
+            position: absolute;
+            top: 15%;
+            left: 85%;
+            transform: translate(-50px, -50px);
+        }
+        .search_btn{
+            height: 23px;
+            width: 22px;
+            position: absolute;
+            top: 192%;
+            left: 127%;
+            transform: translate(-50px, -50px);
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .search_area{
+            color: white;
+            background-color: rgb(33, 32, 32);
+            border-radius: 5px;
+            height: 27px;
+            width: 200px;
+            outline: none;
+            border: none;
+        }
+
+        h2{
+           color: white; 
+           font-family: Arial, Helvetica, sans-serif;
+           padding-left: 2%;
+        }
+
+        .vid1{
+            position: absolute;
+            padding-left: 2%;
+            top: 81%;
+            height: 300px;
+            width: 430px;
+        }
+        .vid2{
+            position: absolute;
+            padding-left: 33.5%;
+            top: 80.5%;
+            height: 300px;
+            width: 428px;
+        }
+        .vid3{
+            position: absolute;
+            padding-left: 64.5%;
+            top: 80.6%;
+            height: 300px;
+            width: 430px;
+        }
+        h2.movies{
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+            padding-top: 257px;
+            padding-left: 2%;
+        }
+
+        .img-container-2{
+            /* position: absolute;
+            top: 50%;
+             */
+             padding-left: 0%;
+             padding-top: -22%;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <ul class="tabs">
+        <li><a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" class="link_rem">Home</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=how+to+remove+links+line+in+html" target="_blank" class="link_rem">Movies</a></li>
+        <li><a href="https://en.y2mate.is/233/" target="_blank" class="link_rem">TV Shows</a></li>
+    </ul>
+        
+    <!-- <h1><img  class="netflixLogo" src="netflixLogo.png" alt="netflix"></h1> -->
+    <h1>
+        <video  autoplay loop muted plays-inline class="logo_video">
+        <source src="./Pic_Vids/logo_video.mp4" type="video/mp4">
+        </video>
+    </h1>
+
+    <form class="form-container">
+        <input type="search" placeholder=" Search..." class="search_area">
+        <img class="search_btn" src="./Pic_Vids/searcher.jpeg" alt="search">
+    </form> 
+    
+    <div class="img-container">
+        <button class="lft_arrow"> < </button>
+        <a href="https://ww1.123moviesfree.net/" target="_blank">
+        <img class="img1" src="./Pic_Vids/stranger_things.jpeg" alt="stranger_things">
+        <img class="img2" src="./Pic_Vids/lucifer.jpg" alt="lucifer">
+        <img class="img3" src="./Pic_Vids/Dark.jpg" alt="Dark">
+        <img class="img4" src="./Pic_Vids/daredevil.jpg" alt="daredevil">
+        <img class="img5" src="./Pic_Vids/peaky_blinders.webp" alt="peaky_blinders">
+        <img class="img6" src="./Pic_Vids/witcher.jpg" alt="witcher">
+        <img class="img7" src="./Pic_Vids/bettercallsaul.webp" alt="bettercallsaul">
+        </a>
+        <button class="right_arrow"> > </button>
+    </div>
+
+    <h2>Trailers Trending in Pakistan</h2>
+
+    
+    <video class="vid1" autoplay loop muted controls="">
+        <source src="./Pic_Vids/Afterlife.mp4" type="video/mp4">
+    </video> 
+       
+    <video class="vid2" autoplay loop muted controls="" >
+        <source src="./Pic_Vids/Devil.mp4" type="video/mp4">
+    </video>
+       
+    <video class="vid3" autoplay loop muted controls="">
+        <source src="./Pic_Vids/strays.mp4" type="video/mp4">
+    </video>
+    
+
+    <h2 class="movies">Movies<p>
+
+    <div class="img-container-2">
+        <button class="lft_arrow_2"> < </button>
+        <a href="http://127.0.0.1:5500/Detachment.html" target="_blank">
+        <img class="img1" src="./Pic_Vids/Detachment.jpg" alt="Detachment">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/the-devil-all-the-time-101442/" target="_blank">
+        <img class="img2" src="./Pic_Vids/DAT.jpg" alt="DAT">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/the-prestige-7386/" target="_blank">
+        <img class="img3" src="./Pic_Vids/intersteller.jpg" alt="intersteller">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/the-godfather-part-ii-2076/" target="_blank">
+        <img class="img4" src="./Pic_Vids/TGF.jpg" alt="TGF">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/the-shawshank-redemption-4601/" target="_blank">
+        <img class="img5" src="./Pic_Vids/EvilDead.jpeg" alt="EvilDead">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/it-21815/" target="_blank">
+        <img class="img6" src="./Pic_Vids/wayofwater.jpeg" alt="wayofwater">
+        </a>
+        <a href="https://ww1.123moviesfree.net/movie/ghost-rider-3350/" target="_blank">
+        <img class="img7" src="./Pic_Vids/topGun.jpeg" alt="topGun">
+        </a>
+        <button class="right_arrow_2"> > </button>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn1">SIGN UP</button>
+    </div>
+</body>
+</html>
